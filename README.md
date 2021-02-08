@@ -37,7 +37,7 @@ cd IncidentsDataset
 
 conda create -n incidents python=3.8.2
 conda activate incidents
-pip install -r requirements.txt
+pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 # Using the Incident Model
