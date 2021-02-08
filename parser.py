@@ -45,6 +45,12 @@ def get_parser():
     parser.add_argument("--images_path",
                         default="data/images/",
                         help="Path to the downloaded images.")
+    parser.add_argument("--images_file",
+                        default="",
+                        help="Path to the input images file.")
+    parser.add_argument("--output_file",
+                        default="inference_output.tsv",
+                        help="Path to the output inference file.")
 
     parser.add_argument("--dataset_train",
                         default="data/eccv_train.json")
@@ -137,6 +143,11 @@ def get_parser():
                         default=1024,
                         type=int,
                         help='output dimension of network')
+
+    parser.add_argument('--topk',
+                        default=1,
+                        type=int,
+                        help='top-k predictions to be returned')
     return parser
 
 
