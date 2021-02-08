@@ -19,17 +19,13 @@ from parser import get_parser, get_postprocessed_args
 
 from utils import get_index_to_incident_mapping, get_index_to_place_mapping
 
-# data
-image_filenames = sorted(glob.glob("example_images/*"))
-
 # model
 CONFIG_FILENAME = "configs/eccv_final_model"
 CHECKPOINT_PATH_FOLDER = "pretrained_weights/"
 
-parser = get_parser()
-# args = parser.parse_args(args="--config={} --checkpoint_path={} --mode=test --num_gpus=1".format(CONFIG_FILENAME, CHECKPOINT_PATH_FOLDER))
 # call command
 # python detect_incidents.py --config=configs/eccv_final_model --checkpoint_path=pretrained_weights/ --mode=test --num_gpus=1 --topk=5 --images_file=example_images.txt --output_file=example_images_incidents.tsv
+parser = get_parser()
 args = parser.parse_args()
 args = get_postprocessed_args(args)
 
