@@ -24,7 +24,7 @@ CONFIG_FILENAME = "configs/eccv_final_model"
 CHECKPOINT_PATH_FOLDER = "pretrained_weights/"
 
 # call command
-# python detect_incidents.py --config=configs/eccv_final_model --checkpoint_path=pretrained_weights/ --mode=test --num_gpus=1 --topk=5 --images_file=example_images.txt --output_file=example_images_incidents.tsv
+# python detect_incidents.py --config=configs/eccv_final_model --checkpoint_path=pretrained_weights/ --mode=test --num_gpus=1 --topk=5 --images_file=example_images_file.txt --images_path=example_images/ --output_file=example_images_incidents.tsv
 parser = get_parser()
 args = parser.parse_args()
 args = get_postprocessed_args(args)
@@ -40,7 +40,7 @@ update_incidents_model_to_eval_mode(incidents_model)
 # Set up the data loader for quickly loading images to run inference with.
 print("num images: {}".format(len(image_filenames)))
 targets = [image_filenames[i] for i in range(len(image_filenames))]
-dataset = FilenameDataset(image_filenames, targets)
+dataset = FilenameDataset(image_filenames, targets, args.images_path)
 loader = torch.utils.data.DataLoader(
     dataset,
     batch_size=1,
