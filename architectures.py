@@ -32,7 +32,7 @@ class FilenameDataset(data.Dataset):
     Data loader for filenames and their corresponding labels.
     """
 
-    def __init__(self, image_filenames, targets):
+    def __init__(self, image_filenames, targets, images_path=''):
         """
         Args:
             image_filenames (list): List of image filenames
@@ -41,6 +41,7 @@ class FilenameDataset(data.Dataset):
         assert (len(image_filenames) == len(targets))
         self.image_filenames = image_filenames
         self.targets = targets
+        self.images_path = images_path
 
     def __getitem__(self, index):
         """
@@ -49,7 +50,7 @@ class FilenameDataset(data.Dataset):
         Returns:
             tuple: (image, target) where target is the target class index
         """
-        image_filename = self.image_filenames[index]
+        image_filename = os.path.join(self.images_path, self.image_filenames[index])
         # if not os.path.isfile(image_filename):
         #     os.system("ln -s {} {}".format(image_filename.replace("/data/vision/torralba/humanitarian/datasets/images_raw/",
         #                                                           "/data/vision/torralba/humanitarian/dimitris/getGoogleImages2/finalImages/"), image_filename))
