@@ -1,0 +1,4 @@
+earthquake.jpg
+fire.jpg
+flood.jpg
+ship.jpg
