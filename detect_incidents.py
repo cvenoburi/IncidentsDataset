@@ -49,7 +49,7 @@ loader = torch.utils.data.DataLoader(
 )
 
 inference_dict = {}
-for idx, (batch_input, image_paths) in tqdm(enumerate(loader)):
+for idx, (batch_input, image_paths) in tqdm(enumerate(loader),total=len(loader)):
     # run the model, get the output, set the inference_dict
     output = get_predictions_from_model(
         args,
