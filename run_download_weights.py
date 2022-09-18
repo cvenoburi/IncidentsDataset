@@ -14,6 +14,10 @@ file_id_to_filename = {
     "1XbPMbKOBkj6EXjMZa4ybOezI6NMZwLOK": "eccv_final_model_trunk.pth.tar",
     "1D3Nh-CqK0jTXu3fgcTwkLSIlQzgApFzu": "eccv_final_model_incident.pth.tar",
     "1DbWnki2352JueF_DrnVmSVvo6bAPlf5W": "eccv_final_model_place.pth.tar",
+    #
+    "1tEL6rmwftP5KBVsgIXmmoX_NKXRh58iG": "multi_label_final_model_trunk.pth.tar",
+    "1p6BU2dO_femx7exE5IkCRwDzZPl8q6z2": "multi_label_final_model_incident.pth.tar",
+    "1C_NpzwnJap7y0kevMp5MZlwVCKj1l9dB": "multi_label_final_model_place.pth.tar",
 }
 
 for file_id, filename in tqdm(file_id_to_filename.items()):
