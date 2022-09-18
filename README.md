@@ -32,7 +32,7 @@ multi_label_val.json
 # Setup environment
 
 ```
-git clone https://github.com/ethanweber/IncidentsDataset
+git clone https://github.com/cvenoburi/IncidentsDataset.git
 cd IncidentsDataset
 
 conda create -n incidents python=3.8.2
