@@ -3,11 +3,12 @@
 See the following pages for more details:
 
 - Project page: [IncidentsDataset.csail.mit.edu](http://incidentsdataset.csail.mit.edu/).
-- ECCV 2020 Paper "Detecting natural disasters, damage, and incidents in the wild" [here](http://incidentsdataset.csail.mit.edu/IncidentsDatasetPaper.pdf).
+- ECCV 2020 Paper "Detecting natural disasters, damage, and incidents in the wild" [here](https://arxiv.org/abs/2008.09188).
+- **Extended Paper** "Incidents1M: a large-scale dataset of images with natural disasters, damage, and incidents" [here](https://arxiv.org/abs/2201.04236).
 
 # Obtain the data
 
-> Please contact incidentsdataset@googlegroups.com to obtain the data.
+> Please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSe1XEHEXe0DskkKWCpCVzho8H7RTIBDEVh3P16NtIjJEsm2ZQ/viewform) and then email/notify incidentsdataset@googlegroups.com to request the data.
 
 The data structure is in JSON with URLs and labels. The files are in the following form:
 
@@ -61,6 +62,11 @@ pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable
    eccv_final_model_trunk.pth.tar
    eccv_final_model_incident.pth.tar
    eccv_final_model_place.pth.tar
+
+   # multi-label final model weights
+   multi_label_final_model_trunk.pth.tar
+   multi_label_final_model_incident.pth.tar
+   multi_label_final_model_place.pth.tar
    ```
 
 2. Run inference with the model with [RunModel.ipynb](RunModel.ipynb).
@@ -88,6 +94,8 @@ pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable
    # visualize tensorboard
    tensorboard --samples_per_plugin scalars=100,images=10 --port 8880 --bind_all --logdir runs/eccv_final_model
    ```
+
+   See the `configs/` folder for more details.
 
 # Citation
 
