@@ -158,8 +158,6 @@ def update_incidents_model_with_checkpoint(incidents_model, args):
 
     config_name = os.path.basename(args.config)
     print(config_name)
-    
-    best_str = "_best" if args.mode == "test" else ""
 
     trunk_resume = os.path.join(
         args.checkpoint_path, "{}_trunk.pth.tar".format(config_name))
