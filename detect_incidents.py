@@ -20,11 +20,11 @@ from parser import get_parser, get_postprocessed_args
 from utils import get_index_to_incident_mapping, get_index_to_place_mapping
 
 # model
-CONFIG_FILENAME = "configs/eccv_final_model"
+CONFIG_FILENAME = "configs/multi_label_final_model"
 CHECKPOINT_PATH_FOLDER = "pretrained_weights/"
 
 # call command
-# python detect_incidents.py --config=configs/eccv_final_model --checkpoint_path=pretrained_weights/ --mode=test --num_gpus=1 --topk=5 --images_file=example_images_file.txt --images_path=example_images/ --output_file=example_images_incidents.tsv
+# python detect_incidents.py --config=configs/multi_label_final_model --checkpoint_path=pretrained_weights/ --mode=test --num_gpus=1 --topk=5 --images_file=example_images_list.txt --images_path=example_images --output_file=example_images_incidents_multi-label.tsv
 parser = get_parser()
 args = parser.parse_args()
 args = get_postprocessed_args(args)
@@ -62,7 +62,7 @@ for idx, (batch_input, image_paths) in tqdm(enumerate(loader),total=len(loader))
         topk=args.topk
     )
 
-# todo: inference_dict contains numpy arrays which are not JSON serializable,
+# inference_dict contains numpy arrays which are not JSON serializable,
 # either convert them to lists before saving, or change the output format to something else, e.g., tsv
 with open(args.output_file, "w") as write_file:
     for image_filename in inference_dict:
