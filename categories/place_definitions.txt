@@ -1,0 +1,49 @@
+badlands;deeply eroded barren land covered with ridges and ravines, with little or no vegetation.
+beach;a sandy or rocky strip at the edge of the shore.
+bridge;a structure that allows people or vehicles to cross an obstacle such as a river or canal or railway.
+building facade;the principal face of a building.
+building outdoor;the outside part of city buildings like apartments, libraries, museums, offices, schools...
+cabin outdoor;wooden house or tent in the wilderness.
+coast;the shore of a sea or ocean.
+construction site;a cleared area where a building is being built or repaired.
+dam;a barrier constructed across a waterway to control the flow or raise the level of water.
+desert road;a road or highway running through a desert.
+desert;a dry region with little rainfall and extreme temperatures, which is covered in sand and can have vegetation.
+downtown;an area (usually in the center) of a city which is dominated by commercial and office buildings.
+excavation;a hole dug for construction purposes, such as laying pipes or a building foundation, or building a pool.
+farm;a tract of land used to grow crops, usually featuring buildings such as a farmhouse, silo, barn, etc.
+field;a broad open expanse of land with or without roads.
+fire station;a building which houses fire equipment and firefighters.
+forest;large area covered chiefly with trees and undergrowth than can contain paths.
+forest road;a paved road running through a forest.
+gas station;a building with a drive-through service where fuel for motor vehicles is sold.
+glacier;a huge mass of ice slowly flowing over a land mass, formed from compacted snow.
+highway;a major road running through an unpopulated area, connecting towns and cities, that can contain roundabouts and flyovers.
+house;a dwelling that serves as living quarters for one or more families.
+industrial area;an area covered with commercial and manufacturing buildings, usually set away from residential areas.
+junkyard;a field or lot where junk (especially automobile parts and scrap metal) and  is collected and stored for resale.
+lake natural;a large body of fresh water surrounded by land.
+landfill;a large dump where refuse is disposed of by burying layer after layer in an area of low-lying ground.
+lighthouse;a tower near the sea with a light on top that gives warning of shoals to passing ships.
+mountain;a land mass that projects well above its surroundings.
+nuclear power plant;a thermal power station in which the heat source is a nuclear reactor.
+ocean;a large body of salt water constituting a principal part of the hydrosphere.
+oil rig;a structure with equipment for drilling an oil well; an oil platform.
+park;a landscaped area in or near a city or town, set aside for recreation and public use.
+parking lot;a lot where cars are parked.
+pier;a platform extending from a shore over water and supported by piles or pillars, used as a walkway for scenic views or fishing.
+port;place where ships load or unload.
+power line;a cable carrying electrical power, especially one supported by pylons or poles.
+railroad track;a road on which trains run, composed of parallel steel rails supported by ties.
+religious building;a building used for religious purposes.
+residential neighborhood;a district where people live occupied primarily by private residences.
+river;a large natural stream of water (larger than a creek).
+sky;the upper atmosphere as seen from the earth's surface.
+skyscraper;a very tall modern building, usually in a city.
+slum;a heavily populated urban area characterized by substandard housing and squalor.
+snowfield;a wide, flat expanse of snow.
+sports field;the field on which play sports such as soccer, basketball, baseball etc.
+street;a thoroughfare (usually including sidewalks) that is lined with buildings.
+valley;a long depression in the surface of the land.
+village;a small community in the countryside.
+volcano;a mountain formed by volcanic material.
